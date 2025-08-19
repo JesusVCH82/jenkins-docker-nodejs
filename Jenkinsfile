@@ -1,7 +1,7 @@
 pipeline {
     agent{
         docker{
-            image 'node:14-alpine' //Image Docker Node.js
+            image 'arm64v8/node:14-alpine'
             args '--platform linux/arm64 -p 5001:5001'
         }
     }
