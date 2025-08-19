@@ -2,7 +2,7 @@ pipeline {
     agent{
         docker{
             image 'node:14-alpine' //Image Docker Node.js
-            args '-p 5001:5001'
+            args '--platform linux/arm64 -p 5001:5001'
         }
     }
     
